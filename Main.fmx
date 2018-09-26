@@ -39,7 +39,7 @@ object frmCalculator: TfrmCalculator
       Size.Height = 100.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
-      object Button1: TButton
+      object butMR: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -50,9 +50,9 @@ object frmCalculator: TfrmCalculator
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        Text = 'Button1'
+        Text = 'MR'
       end
-      object Button2: TButton
+      object butMC: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -63,9 +63,9 @@ object frmCalculator: TfrmCalculator
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Text = 'Button2'
+        Text = 'MC'
       end
-      object Button3: TButton
+      object butMPlus: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -76,9 +76,9 @@ object frmCalculator: TfrmCalculator
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
-        Text = 'Button3'
+        Text = 'M+'
       end
-      object Button4: TButton
+      object butMMinus: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -89,7 +89,7 @@ object frmCalculator: TfrmCalculator
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
-        Text = 'Button4'
+        Text = 'M-'
       end
     end
     object FlowLayout2: TFlowLayout
