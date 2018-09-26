@@ -17,9 +17,9 @@ type
     butMPlus: TButton;
     butMMinus: TButton;
     FlowLayout2: TFlowLayout;
-    Button5: TButton;
-    Button6: TButton;
-    Button7: TButton;
+    butClear: TButton;
+    butClearAll: TButton;
+    butDel: TButton;
   private
     { Private declarations }
   public
