@@ -102,7 +102,7 @@ object frmCalculator: TfrmCalculator
       Justify = Left
       JustifyLastLine = Left
       FlowDirection = LeftToRight
-      object Button5: TButton
+      object butClear: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -113,9 +113,9 @@ object frmCalculator: TfrmCalculator
         Size.Height = 79.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        Text = 'Button5'
+        Text = 'C'
       end
-      object Button6: TButton
+      object butClearAll: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -126,9 +126,9 @@ object frmCalculator: TfrmCalculator
         Size.Height = 79.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Text = 'Button6'
+        Text = 'CE'
       end
-      object Button7: TButton
+      object butDel: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -139,7 +139,7 @@ object frmCalculator: TfrmCalculator
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
-        Text = 'Button7'
+        Text = 'Delete'
       end
     end
   end
