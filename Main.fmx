@@ -2,15 +2,16 @@ object frmCalculator: TfrmCalculator
   Left = 0
   Top = 0
   Caption = 'Calcurator'
-  ClientHeight = 695
+  ClientHeight = 818
   ClientWidth = 433
+  Position = ScreenCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object FlowLayout1: TFlowLayout
     Size.Width = 433.000000000000000000
-    Size.Height = 695.000000000000000000
+    Size.Height = 817.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     Justify = Center
@@ -22,6 +23,7 @@ object frmCalculator: TfrmCalculator
       Align = Top
       TabOrder = 0
       Text = 'Zorica'
+      TextSettings.Font.Size = 40.000000000000000000
       Position.X = 16.500000000000000000
       Position.Y = 20.000000000000000000
       Margins.Top = 20.000000000000000000
@@ -29,17 +31,68 @@ object frmCalculator: TfrmCalculator
       Size.Width = 400.000000000000000000
       Size.Height = 73.000000000000000000
       Size.PlatformDefault = False
+      StyledSettings = [Family, Style, FontColor]
     end
-    object GridLayout1: TGridLayout
-      ItemHeight = 100.000000000000000000
-      ItemWidth = 100.000000000000000000
-      Orientation = Horizontal
+    object FlowLayout2: TFlowLayout
       Position.X = 16.500000000000000000
       Position.Y = 106.000000000000000000
       Size.Width = 400.000000000000000000
       Size.Height = 100.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
+      Justify = Left
+      JustifyLastLine = Left
+      FlowDirection = LeftToRight
+      object butClear: TButton
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 79.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'C'
+      end
+      object butClearAll: TButton
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 110.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 79.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'CE'
+      end
+      object butDel: TButton
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 210.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 180.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Delete'
+      end
+    end
+    object GridLayout1: TGridLayout
+      ItemHeight = 100.000000000000000000
+      ItemWidth = 100.000000000000000000
+      Orientation = Horizontal
+      Position.X = 16.500000000000000000
+      Position.Y = 209.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
       object butMR: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
@@ -93,68 +146,17 @@ object frmCalculator: TfrmCalculator
         Text = 'M-'
       end
     end
-    object FlowLayout2: TFlowLayout
-      Position.X = 16.500000000000000000
-      Position.Y = 209.000000000000000000
-      Size.Width = 400.000000000000000000
-      Size.Height = 100.000000000000000000
-      Size.PlatformDefault = False
-      TabOrder = 2
-      Justify = Left
-      JustifyLastLine = Left
-      FlowDirection = LeftToRight
-      object butClear: TButton
-        Margins.Left = 10.000000000000000000
-        Margins.Top = 10.000000000000000000
-        Margins.Right = 10.000000000000000000
-        Margins.Bottom = 10.000000000000000000
-        Position.X = 10.000000000000000000
-        Position.Y = 10.000000000000000000
-        Size.Width = 80.000000000000000000
-        Size.Height = 79.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 0
-        Text = 'C'
-      end
-      object butClearAll: TButton
-        Margins.Left = 10.000000000000000000
-        Margins.Top = 10.000000000000000000
-        Margins.Right = 10.000000000000000000
-        Margins.Bottom = 10.000000000000000000
-        Position.X = 110.000000000000000000
-        Position.Y = 10.000000000000000000
-        Size.Width = 80.000000000000000000
-        Size.Height = 79.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 1
-        Text = 'CE'
-      end
-      object butDel: TButton
-        Margins.Left = 10.000000000000000000
-        Margins.Top = 10.000000000000000000
-        Margins.Right = 10.000000000000000000
-        Margins.Bottom = 10.000000000000000000
-        Position.X = 210.000000000000000000
-        Position.Y = 10.000000000000000000
-        Size.Width = 180.000000000000000000
-        Size.Height = 80.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 2
-        Text = 'Delete'
-      end
-    end
-    object GridLayout2: TGridLayout
+    object GridLayout4: TGridLayout
       ItemHeight = 100.000000000000000000
       ItemWidth = 100.000000000000000000
       Orientation = Horizontal
-      Position.X = 66.500000000000000000
+      Position.X = 16.500000000000000000
       Position.Y = 312.000000000000000000
-      Size.Width = 300.000000000000000000
-      Size.Height = 400.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 100.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 3
-      OnClick = GridLayout2Click
-      object but1: TButton
+      object butSign: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -165,9 +167,9 @@ object frmCalculator: TfrmCalculator
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        Text = '1'
+        Text = '-/+'
       end
-      object but2: TButton
+      object butDiv: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -178,9 +180,9 @@ object frmCalculator: TfrmCalculator
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        Text = '2'
+        Text = '/'
       end
-      object but3: TButton
+      object butMul: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -191,48 +193,219 @@ object frmCalculator: TfrmCalculator
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
-        Text = '3'
+        Text = '*'
       end
-      object but4: TButton
+      object butMinus: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
         Margins.Bottom = 10.000000000000000000
-        Position.X = 10.000000000000000000
-        Position.Y = 110.000000000000000000
+        Position.X = 310.000000000000000000
+        Position.Y = 10.000000000000000000
         Size.Width = 80.000000000000000000
         Size.Height = 80.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
-        Text = '4'
+        Text = '-'
       end
-      object but5: TButton
+    end
+    object FlowLayout4: TFlowLayout
+      Position.X = 16.500000000000000000
+      Position.Y = 415.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Justify = Left
+      JustifyLastLine = Left
+      FlowDirection = LeftToRight
+      object GridLayout2: TGridLayout
+        ItemHeight = 100.000000000000000000
+        ItemWidth = 100.000000000000000000
+        Orientation = Horizontal
+        Size.Width = 300.000000000000000000
+        Size.Height = 300.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object but1: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '1'
+        end
+        object but2: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 110.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = '2'
+        end
+        object but3: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 210.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = '3'
+        end
+        object but4: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 110.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = '4'
+        end
+        object but5: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 110.000000000000000000
+          Position.Y = 110.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = '5'
+        end
+        object but6: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 210.000000000000000000
+          Position.Y = 110.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = '6'
+        end
+        object but7: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 210.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = '7'
+        end
+        object but8: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 110.000000000000000000
+          Position.Y = 210.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = '8'
+        end
+        object but9: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 210.000000000000000000
+          Position.Y = 210.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 8
+          Text = '9'
+        end
+      end
+      object FlowLayout3: TFlowLayout
+        Position.Y = 300.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Justify = Left
+        JustifyLastLine = Left
+        FlowDirection = LeftToRight
+        object but0: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 180.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = '0'
+        end
+        object Button1: TButton
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Position.X = 210.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 80.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = ','
+        end
+      end
+    end
+    object GridLayout3: TGridLayout
+      ItemHeight = 200.000000000000000000
+      ItemWidth = 100.000000000000000000
+      Orientation = Horizontal
+      Position.X = 316.500000000000000000
+      Position.Y = 415.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object butPlus: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
         Margins.Bottom = 10.000000000000000000
-        Position.X = 110.000000000000000000
-        Position.Y = 110.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
         Size.Width = 80.000000000000000000
-        Size.Height = 80.000000000000000000
+        Size.Height = 180.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 4
-        Text = '5'
+        TabOrder = 0
+        Text = '+'
       end
-      object but6: TButton
-        Margins.Left = 10.000000000000000000
-        Margins.Top = 10.000000000000000000
-        Margins.Right = 10.000000000000000000
-        Margins.Bottom = 10.000000000000000000
-        Position.X = 210.000000000000000000
-        Position.Y = 110.000000000000000000
-        Size.Width = 80.000000000000000000
-        Size.Height = 80.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 5
-        Text = '6'
-      end
-      object but7: TButton
+      object butEqual: TButton
         Margins.Left = 10.000000000000000000
         Margins.Top = 10.000000000000000000
         Margins.Right = 10.000000000000000000
@@ -240,49 +413,10 @@ object frmCalculator: TfrmCalculator
         Position.X = 10.000000000000000000
         Position.Y = 210.000000000000000000
         Size.Width = 80.000000000000000000
-        Size.Height = 80.000000000000000000
+        Size.Height = 180.000000000000000000
         Size.PlatformDefault = False
-        TabOrder = 6
-        Text = '7'
-      end
-      object but8: TButton
-        Margins.Left = 10.000000000000000000
-        Margins.Top = 10.000000000000000000
-        Margins.Right = 10.000000000000000000
-        Margins.Bottom = 10.000000000000000000
-        Position.X = 110.000000000000000000
-        Position.Y = 210.000000000000000000
-        Size.Width = 80.000000000000000000
-        Size.Height = 80.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 7
-        Text = '8'
-      end
-      object but9: TButton
-        Margins.Left = 10.000000000000000000
-        Margins.Top = 10.000000000000000000
-        Margins.Right = 10.000000000000000000
-        Margins.Bottom = 10.000000000000000000
-        Position.X = 210.000000000000000000
-        Position.Y = 210.000000000000000000
-        Size.Width = 80.000000000000000000
-        Size.Height = 80.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 8
-        Text = '9'
-      end
-      object but0: TButton
-        Margins.Left = 10.000000000000000000
-        Margins.Top = 10.000000000000000000
-        Margins.Right = 10.000000000000000000
-        Margins.Bottom = 10.000000000000000000
-        Position.X = 10.000000000000000000
-        Position.Y = 310.000000000000000000
-        Size.Width = 80.000000000000000000
-        Size.Height = 80.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 9
-        Text = '0'
+        TabOrder = 1
+        Text = '='
       end
     end
   end

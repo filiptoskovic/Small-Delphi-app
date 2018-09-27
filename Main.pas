@@ -31,7 +31,17 @@ type
     but8: TButton;
     but9: TButton;
     but0: TButton;
-    procedure GridLayout2Click(Sender: TObject);
+    FlowLayout3: TFlowLayout;
+    Button1: TButton;
+    GridLayout4: TGridLayout;
+    butSign: TButton;
+    butDiv: TButton;
+    butMul: TButton;
+    butMinus: TButton;
+    FlowLayout4: TFlowLayout;
+    GridLayout3: TGridLayout;
+    butPlus: TButton;
+    butEqual: TButton;
   private
     { Private declarations }
   public
@@ -45,9 +55,4 @@ implementation
 
 {$R *.fmx}
 
-eprocedure TfrmCalculator.GridLayout2Click(Sender: TObject);
-begin
-
-end;
-
-nd.
+end.
