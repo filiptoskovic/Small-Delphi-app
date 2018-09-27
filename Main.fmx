@@ -21,6 +21,7 @@ object frmCalculator: TfrmCalculator
       Touch.InteractiveGestures = [LongTap, DoubleTap]
       Align = Top
       TabOrder = 0
+      Text = 'Zorica'
       Position.X = 16.500000000000000000
       Position.Y = 20.000000000000000000
       Margins.Top = 20.000000000000000000
@@ -93,7 +94,7 @@ object frmCalculator: TfrmCalculator
       end
     end
     object FlowLayout2: TFlowLayout
-      Position.X = 16.500000000000000000
+      Position.X = 0.500000000000000000
       Position.Y = 209.000000000000000000
       Size.Width = 400.000000000000000000
       Size.Height = 100.000000000000000000
