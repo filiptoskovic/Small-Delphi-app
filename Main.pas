@@ -20,6 +20,18 @@ type
     butClear: TButton;
     butClearAll: TButton;
     butDel: TButton;
+    GridLayout2: TGridLayout;
+    but1: TButton;
+    but2: TButton;
+    but3: TButton;
+    but4: TButton;
+    but5: TButton;
+    but6: TButton;
+    but7: TButton;
+    but8: TButton;
+    but9: TButton;
+    but0: TButton;
+    procedure GridLayout2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,4 +45,9 @@ implementation
 
 {$R *.fmx}
 
-end.
+eprocedure TfrmCalculator.GridLayout2Click(Sender: TObject);
+begin
+
+end;
+
+nd.
